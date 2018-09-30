@@ -7,5 +7,6 @@ target 'PhotoMap' do
 
   # Pods for PhotoMap
   pod 'AFNetworking', '~> 3.0'
+  pod 'AlamofireImage', '~> 3.4'
 
 end

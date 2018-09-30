@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5714B51721609A5A00283432 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5714B51621609A5A00283432 /* AppDelegate.swift */; };
-		5714B51921609A5A00283432 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5714B51821609A5A00283432 /* ViewController.swift */; };
 		5714B51C21609A5A00283432 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5714B51A21609A5A00283432 /* Main.storyboard */; };
 		5714B51E21609A5C00283432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5714B51D21609A5C00283432 /* Assets.xcassets */; };
 		5714B52121609A5C00283432 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5714B51F21609A5C00283432 /* LaunchScreen.storyboard */; };
 		57CBD23C21609BB00054C034 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CBD23B21609BB00054C034 /* Keys.swift */; };
 		57CBD23E21609BBE0054C034 /* KeysSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CBD23D21609BBE0054C034 /* KeysSample.swift */; };
+		57E111BA216118B800E51DAA /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E111B9216118B800E51DAA /* LocationsViewController.swift */; };
+		57E111BC216118CB00E51DAA /* PhotoMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E111BB216118CB00E51DAA /* PhotoMapViewController.swift */; };
+		57E111BE216118DA00E51DAA /* FullImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E111BD216118DA00E51DAA /* FullImageViewController.swift */; };
+		57E111C0216118F800E51DAA /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E111BF216118F800E51DAA /* LocationCell.swift */; };
 		FAB1EAD1292BECFF3FCAD351 /* Pods_PhotoMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9240F5B488C5E32A304DEE /* Pods_PhotoMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,13 +24,16 @@
 		5389ED0FBEEBFADB9CE9703C /* Pods-PhotoMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoMap/Pods-PhotoMap.debug.xcconfig"; sourceTree = "<group>"; };
 		5714B51321609A5A00283432 /* PhotoMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5714B51621609A5A00283432 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5714B51821609A5A00283432 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5714B51B21609A5A00283432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5714B51D21609A5C00283432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5714B52021609A5C00283432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5714B52221609A5C00283432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57CBD23B21609BB00054C034 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		57CBD23D21609BBE0054C034 /* KeysSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysSample.swift; sourceTree = "<group>"; };
+		57E111B9216118B800E51DAA /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		57E111BB216118CB00E51DAA /* PhotoMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMapViewController.swift; sourceTree = "<group>"; };
+		57E111BD216118DA00E51DAA /* FullImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewController.swift; sourceTree = "<group>"; };
+		57E111BF216118F800E51DAA /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		8C9240F5B488C5E32A304DEE /* Pods_PhotoMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83EAC508F9F274F312200AC /* Pods-PhotoMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoMap/Pods-PhotoMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,8 +71,9 @@
 		5714B51521609A5A00283432 /* PhotoMap */ = {
 			isa = PBXGroup;
 			children = (
+				57E111B82161188900E51DAA /* Views */,
+				57E111B72161188100E51DAA /* View Controllers */,
 				5714B51621609A5A00283432 /* AppDelegate.swift */,
-				5714B51821609A5A00283432 /* ViewController.swift */,
 				5714B51A21609A5A00283432 /* Main.storyboard */,
 				5714B51D21609A5C00283432 /* Assets.xcassets */,
 				5714B51F21609A5C00283432 /* LaunchScreen.storyboard */,
@@ -75,6 +82,24 @@
 				57CBD23D21609BBE0054C034 /* KeysSample.swift */,
 			);
 			path = PhotoMap;
+			sourceTree = "<group>";
+		};
+		57E111B72161188100E51DAA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57E111B9216118B800E51DAA /* LocationsViewController.swift */,
+				57E111BB216118CB00E51DAA /* PhotoMapViewController.swift */,
+				57E111BD216118DA00E51DAA /* FullImageViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		57E111B82161188900E51DAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57E111BF216118F800E51DAA /* LocationCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		81D3430C7C80555A6D148916 /* Frameworks */ = {
@@ -171,10 +196,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PhotoMap/Pods-PhotoMap-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -206,10 +235,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5714B51921609A5A00283432 /* ViewController.swift in Sources */,
+				57E111BC216118CB00E51DAA /* PhotoMapViewController.swift in Sources */,
 				57CBD23E21609BBE0054C034 /* KeysSample.swift in Sources */,
 				57CBD23C21609BB00054C034 /* Keys.swift in Sources */,
 				5714B51721609A5A00283432 /* AppDelegate.swift in Sources */,
+				57E111C0216118F800E51DAA /* LocationCell.swift in Sources */,
+				57E111BA216118B800E51DAA /* LocationsViewController.swift in Sources */,
+				57E111BE216118DA00E51DAA /* FullImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
