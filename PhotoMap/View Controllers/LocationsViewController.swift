@@ -8,12 +8,17 @@
 
 import UIKit
 
+protocol LocationsViewControllerDelegate : class {
+    func locationsPickedLocation(controller: LocationsViewController, latitude: NSNumber, longitude: NSNumber)
+}
+
 class LocationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     let CLIENT_ID = Keys.FOURSQUARE_CLIENT_ID
     let CLIENT_SECRET = Keys.FOURSQUARE_CLIENT_SECRET
     
     var results: NSArray = []
+    weak var delegate : LocationsViewControllerDelegate!
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -41,6 +46,11 @@ class LocationsViewController: UIViewController, UITableViewDelegate, UITableVie
         let lngString = "\(lng)"
         
         print(latString + " " + lngString)
+        delegate.locationsPickedLocation(controller: self, latitude: lat, longitude: lng)
+    }
+    
+    func locationsPickedLocation() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
@@ -83,7 +93,7 @@ class LocationsViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.delegate = self
         searchBar.delegate = self
         
-        // Do any additional setup after loading the view.
+        fetchLocations("")
     }
     
     override func didReceiveMemoryWarning() {
